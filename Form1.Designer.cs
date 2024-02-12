@@ -98,6 +98,7 @@
             checkBox1.TabIndex = 5;
             checkBox1.Text = "¿Cliente habitual?";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // textBox1
             // 
@@ -105,6 +106,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(247, 23);
             textBox1.TabIndex = 6;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -125,10 +127,11 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Rumanía", "Eslovaquia", "Francia", "Brasil", "Noruega", "Canadá" });
-            comboBox1.Location = new Point(244, 233);
+            comboBox1.Location = new Point(244, 230);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(139, 23);
             comboBox1.TabIndex = 9;
+            comboBox1.Text = "Selecciona uno ->";
             // 
             // listBox1
             // 
@@ -142,6 +145,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.ImageLocation = "D:\\ProyectosVisual\\FB1\\FormularioFB1\\clientef.jpg";
             pictureBox1.Location = new Point(492, 159);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(119, 103);
@@ -156,6 +160,7 @@
             button1.TabIndex = 12;
             button1.Text = "Registrar cliente";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
